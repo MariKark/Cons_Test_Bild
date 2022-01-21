@@ -19,13 +19,13 @@ namespace PictureHandling
 
             do
             {
-
+                                                     //Bild ist hier auch beigefügt worden
              FileStream oStream = new FileStream(@"C:\Users\Study-Hent\Desktop\WetterAPI\Wetter1.bmp", FileMode.Open);
              Bitmap image = new Bitmap(oStream);
              oStream.Close();
 
-             //newBitmap = new Bitmap(image);
-                newBitmap = new Bitmap();
+             newBitmap = new Bitmap(image);
+               // newBitmap = new Bitmap();
 
                 return newBitmap;
 
